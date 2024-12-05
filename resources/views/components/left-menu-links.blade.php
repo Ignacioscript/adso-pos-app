@@ -40,9 +40,10 @@
     </div>
 
     <div class="block px-2 py-2 border">
-        <a href="/stock" class="{{request()->is('stock') ? 'text-blue-800 font font-semibold':'text-black hover:underline'}}" >
+
+        <a href="{{route('products.index')}}" class="{{request()->is('clients') ? 'text-blue-800 font font-semibold':'text-black hover:underline'}}" >
             <img src="images/home_icon.svg" alt="">
-            Inventario</a>
+            Stock</a>
     </div>
 
     <div class="block px-2 py-2 border">
@@ -58,5 +59,6 @@
             <img src="images/home_icon.svg" alt="">
             Clientes</a>
     </div>
+
 
 </div>
